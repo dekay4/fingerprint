@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>hh</title>
+    </head>
+    <body>
+        <h1>hello</h1>
+        <button onclick="captureFPAuth()">hrhehe</button>
+    </body>
+    <script>
+
+function captureFPAuth() {
+            var urlStr = '';
+           
+                urlStr = 'https://127.0.0.1:11200/rd/capture?ts='+ date.now();
+          
+            getJSONCapture(urlStr,
+                function (err, data) {
+                    if (err != null) {
+                        alert('Something went wrong: ' + err);
+                    } else {
+                        console.log(String(data));
+                    }
+                }
+            );
+        }
+        </script>
+</html>
